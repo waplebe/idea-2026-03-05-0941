@@ -76,5 +76,9 @@ def delete_task(id):
 
     return jsonify({'message': 'Task deleted'})
 
+@app.route('/tasks/test', methods=['GET'])
+def test_endpoint():
+    return jsonify({'message': 'Test endpoint successful!'})
+
 if __name__ == '__main__':
     app.run(debug=True)

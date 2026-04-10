@@ -77,6 +77,13 @@ This project demonstrates a full-stack web application using Python (Flask) for 
     ]
     ```
 
+**New Features:**
+
+*   **Test Endpoint:** Added a `/tasks/test` endpoint to verify the API is functioning correctly.
+*   **Task Deletion Confirmation:** Implemented a confirmation dialog before deleting a task.
+*   **Improved Task List Refresh:**  The task list now refreshes after creating and deleting tasks.
+*   **Content-Type Header:** Added `Content-Type: application/json` header to POST requests.
+
 **License:**
 
 MIT License

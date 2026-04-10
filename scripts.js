@@ -30,11 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ title: taskTitle, description: taskDescription })
+                body: JSON.stringify({
+                    title: taskTitle,
+                    description: taskDescription
+                })
             })
             .then(response => response.json())
-            .then(newTask => {
-                // Refresh task list
+            .then(data => {
+                // Optionally, refresh the task list
                 fetch('/tasks')
                     .then(response => response.json())
                     .then(tasks => {
@@ -64,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
                 .then(response => {
                     if (response.ok) {
-                        // Refresh task list
+                        // Optionally, refresh the task list
                         fetch('/tasks')
                             .then(response => response.json())
                             .then(tasks => {

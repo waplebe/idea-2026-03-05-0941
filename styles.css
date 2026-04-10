@@ -1,0 +1,21 @@
+/* Add some basic styling here */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+.deleteTaskButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
